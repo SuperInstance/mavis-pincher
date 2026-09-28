@@ -1,0 +1,26 @@
+{
+  "name": "mavis-pincher",
+  "version": "0.1.0",
+  "description": "The substrate walker for the SuperInstance fleet knowledge surface. A2A API + static dataset.",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.mjs",
+    "build:data": "python3 ../mavis-pincher-pages/scripts/build-dataset.py"
+  },
+  "license": "MIT",
+  "author": "SuperInstance",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperInstance/mavis-pincher"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
